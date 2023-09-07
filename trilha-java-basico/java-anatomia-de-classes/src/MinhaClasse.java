@@ -1,7 +1,20 @@
 public class MinhaClasse {
 
-    public static void main(String[] args) {
-        System.out.print( "Olá! Isso é mais difícel do que parece!" );
-        
+    public static void main (String[] args) {
+
+      String primeiroNome = "Tamirys";
+      String segundoNome="Carvalho";
+
+      String nomeCompleto = nomeCompleto (primeiroNome, segundoNome);
+
+      System.out.println(nomeCompleto);
+
+
+    }
+
+    public static String nomeCompleto (String primeiroNome, String segundoNome) {
+        return primeiroNome.concat(" ").concat(segundoNome);
+
+
     }
 }
